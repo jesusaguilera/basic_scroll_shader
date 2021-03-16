@@ -1,0 +1,33 @@
+/* ==========================================================================
+   #BODY
+   ========================================================================== */
+
+body {
+  background-color: var(--white);
+  color: var(--grey-dark);
+  font-family: $font-family-regular;
+  font-size: $size-default;
+  line-height: $gamma-size;
+  height: 100%;
+  min-height: 100vh;
+  transition: all 250ms ease-in-out;
+  overflow-x: hidden;
+  padding-top: 9.6rem;
+
+  &.has-curtain {
+    overflow: hidden;
+  }
+
+  &.has-modal {
+    overflow: hidden;
+
+    .o-header,
+    .o-wrapper,
+    .o-footer,
+    .c-header > *:not(.c-modal),
+    .c-footer > *:not(.c-modal),
+    .o-wrapper > *:not(.c-modal) {
+      filter: blur(2px);
+    }
+  }
+}

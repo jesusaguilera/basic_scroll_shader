@@ -1,0 +1,29 @@
+/* ==========================================================================
+   #COLOR
+   ========================================================================== */
+
+html {
+  .o-color {
+    &--primary {
+      color: var(--primary-color);
+    }
+    &--secondary {
+      color: var(--secondary-color);
+    }
+    &--grey-dark {
+      color: var(--grey-dark);
+    }
+    &--success {
+      color: var(--success);
+    }
+    &--red {
+      color: var(--error);
+    }
+    &--info {
+      color: var(--info);
+    }
+    &--white {
+      color: var(--white);
+    }
+  }
+}

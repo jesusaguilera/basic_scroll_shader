@@ -1,0 +1,33 @@
+/* ==========================================================================
+   #FONT
+   ========================================================================== */
+
+.o-font {
+  &--bold {
+    font-family: $font-family-bold;
+  }
+
+  &--semibold {
+    font-family: $font-family-semibold;
+  }
+
+  &-p {
+    font-size: $size-default;
+    font-family: $font-family-regular;
+
+    &--small {
+      font-size: $zeta-size;
+    }
+  }
+
+  &-caption {
+    font-size: $size-s;
+    font-family: $font-family-regular;
+  }
+
+  &-error {
+    color: var(--error);
+    font-size: $size-s;
+    font-family: $font-family-regular;
+  }
+}

@@ -1,0 +1,19 @@
+/* ==========================================================================
+   #BUTTON
+   ========================================================================== */
+
+[type="button"],
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--grey-);
+  border: 0;
+  cursor: pointer;
+
+  &[disabled] {
+    opacity: 0.27;
+    pointer-events: none;
+  }
+}
+

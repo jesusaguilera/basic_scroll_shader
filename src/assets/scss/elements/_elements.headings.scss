@@ -1,0 +1,84 @@
+/* ==========================================================================
+#HEADINGS
+========================================================================== */
+
+h1 {
+  color: var(--grey-dark);
+  font-family: $font-family-bold;
+  font-size: $size-xxl;
+  line-height: $size-kilo;
+  transition: all 300ms ease-in-out;
+
+  @media #{$md-and-up} {
+    font-size: $size-giga;
+    line-height: $giga-size;
+  }
+}
+
+h2 {
+  color: var(--grey-dark);
+  font-family: $font-family-bold;
+  transition: all 300ms ease-in-out;
+  font-size: 2.6rem;
+  line-height: 3.3rem;
+
+  @media #{$sm-and-up} {
+    font-size: 3rem;
+    line-height: $alpha-size;
+  }
+
+  @media #{$md-and-up} {
+    font-size: $kilo-size;
+    line-height: $size-kilo;
+  }
+}
+
+h3 {
+  color: var(--grey-dark);
+  font-family: $font-family-bold;
+  font-size: $beta-size;
+  line-height: $size-xl;
+  transition: all 300ms ease-in-out;
+
+  @media #{$md-and-up} {
+    font-size: $alpha-size;
+    line-height: 4.4rem;
+  }
+}
+
+h4 {
+  color: var(--grey-dark);
+  font-family: $font-family-bold;
+  font-size: $gamma-size;
+  line-height: $beta-size;
+  transition: all 300ms ease-in-out;
+
+  @media #{$md-and-up} {
+    font-size: $beta-size;
+    line-height: $size-xl;
+  }
+}
+
+h5 {
+  color: var(--grey-dark);
+  font-family: $font-family-bold;
+  font-size: $delta-size;
+  line-height: $gamma-size;
+  transition: all 300ms ease-in-out;
+
+  @media #{$md-and-up} {
+    font-size: $gamma-size;
+    line-height: $beta-size;
+  }
+}
+
+h6 {
+  color: var(--grey-dark);
+  font-family: $font-family-bold;
+  font-size: $epsilon-size;
+  transition: all 300ms ease-in-out;
+
+  @media #{$md-and-up} {
+    font-size: $delta-size;
+  }
+}

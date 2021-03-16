@@ -1,0 +1,15 @@
+/* ==========================================================================
+   #BG-COLOR
+   ========================================================================== */
+
+.o-bg-color {
+  &--white {
+    background-color: var(--white);
+  }
+  &--primary {
+    background-color: var(--primary-color);
+  }
+  &--grey-dark {
+    background-color: var(--grey-dark);
+  }
+}

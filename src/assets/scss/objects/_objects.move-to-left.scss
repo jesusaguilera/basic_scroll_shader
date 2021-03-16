@@ -1,0 +1,58 @@
+/* ==========================================================================
+   #MOVE TO LEFT
+   ========================================================================== */
+
+html {
+  .o-move-to-left {
+    transition: all 500ms ease-out;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 30rem;
+    z-index: -1;
+    display: none;
+    &--enter {
+      display: flex;
+      opacity: 1;
+      position: absolute;
+      left: 30rem;
+      z-index: 1;
+    }
+    &--enter-active {
+      display: flex;
+      opacity: 1;
+      position: relative;
+      left: 0;
+      z-index: 1;
+    }
+    &--enter-done {
+      display: flex;
+      opacity: 1;
+      position: relative;
+      left: 0;
+      z-index: 1;
+    }
+    &--exit {
+      display: flex;
+      transition: all 200ms ease-out;
+      left: 0;
+      position: static;
+      opacity: 0;
+    }
+    &--exit-active {
+      display: flex;
+      transition: all 200ms ease-out;
+      position: absolute;
+      opacity: 0;
+      left: -40rem;
+      z-index: -1;
+    }
+    &--exit-done {
+      transition: all 200ms ease-out;
+      position: absolute;
+      opacity: 0;
+      left: 30rem;
+      z-index: -1;
+    }
+  }
+}

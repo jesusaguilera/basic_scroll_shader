@@ -1,0 +1,80 @@
+/* ==========================================================================
+   #POSITION
+   ========================================================================== */
+
+html {
+  .o-pos-rel {
+    position: relative;
+    &\@sm-and-up {
+      @media #{$sm-and-up} {
+        position: relative;
+      }
+    }
+    &\@md-and-up {
+      @media #{$md-and-up} {
+        position: relative;
+      }
+    }
+    &\@lg-and-up {
+      @media #{$lg-and-up} {
+        position: relative;
+      }
+    }
+  }
+
+  .o-pos-abs {
+    position: absolute;
+    &\@sm-only {
+      @media #{$sm-only} {
+        position: absolute;
+      }
+    }
+    &\@md-only {
+      @media #{$md-only} {
+        position: absolute;
+      }
+    }
+    &\@lg-only {
+      @media #{$lg-only} {
+        position: absolute;
+      }
+    }
+    &\@sm-and-up {
+      @media #{$sm-and-up} {
+        position: absolute;
+      }
+    }
+    &\@md-and-up {
+      @media #{$md-and-up} {
+        position: absolute;
+      }
+    }
+    &\@lg-and-up {
+      @media #{$lg-and-up} {
+        position: absolute;
+      }
+    }
+
+    &--top-centered {
+      top: $size-default;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--bottom-right {
+      bottom: 0;
+      right: 0;
+    }
+
+    &--center-right {
+      top: 50%;
+      right: $size-default;
+      transform: translateY(-50%);
+    }
+    &--center {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

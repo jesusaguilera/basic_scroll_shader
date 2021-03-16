@@ -1,0 +1,63 @@
+/* ==========================================================================
+   #GRID
+   ========================================================================== */
+
+.o-grid {
+  display: grid;
+  width: 100%;
+  grid-gap: 2.4rem;
+
+  &--three-four {
+    @media #{$sm-and-up} {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media #{$md-and-up} {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media #{$xl-and-up} {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  &--two-four {
+    @media #{$sm-and-up} {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media #{$md-and-up} {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media #{$xl-and-up} {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+
+  &--three {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &--four {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+  &--two {
+    grid-template-columns: 1fr 1fr;
+}
+
+  &__column-two-three {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+
+  &__col {
+    border: 1px dashed var(--grey-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+  }
+}

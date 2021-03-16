@@ -1,0 +1,20 @@
+/* ==========================================================================
+   #CONTAINER
+   ========================================================================== */
+
+.o-container {
+  transition: all 500ms cubic-bezier(0.22, 0.04, 0.05, 1);
+  width: 100%;
+  max-width: $container-width;
+  position: relative;
+  padding-right: $padding-default;
+  padding-left: $padding-default;
+  @media #{$md-and-up} {
+    padding-right: $size-kilo;
+    padding-left: $size-kilo;
+  }
+  @media #{$xl-and-up} {
+    padding-right: $padding-default;
+    padding-left: $padding-default;
+  }
+}
