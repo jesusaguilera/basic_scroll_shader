@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import * as THREE from 'three';
 
 // Shaders
@@ -15,11 +15,15 @@ let geometry, material, mesh;
 const images = [img_01, img_02];
 const materials = [];
 const meshes = [];
+let scY = 0;
 
 const Home = () => {
 
   useEffect(() => {
     init();
+    window.addEventListener("scroll", (e) => {
+      scY = window.scrollY * 0.002;
+    })
   }, [])
 
   const init = () =>  {
@@ -67,9 +71,8 @@ const Home = () => {
       geometry = new THREE.PlaneGeometry(1.5, 1, 20, 20);
       mesh = new THREE.Mesh(geometry, mat);
       scene.add(mesh);
-      mesh.position.y = index * 1.2;
+      mesh.position.y = -index * 1.2;
       meshes.push(mesh);
-
     })
 
   }
@@ -78,7 +81,7 @@ const Home = () => {
 
     meshes.map((mesh, index) => {
       materials[index].uniforms.u_time.value = time / 3000;
-      // mesh.rotation.x = time * 0.0002
+      mesh.position.y = -index * 1.2 + scY;
       // mesh.rotation.y = time * 0.0003;
     })
     renderer.render( scene, camera );
@@ -92,7 +95,11 @@ const Home = () => {
   }
 
   return (
-    <h1>Home</h1>
+    <main style={{overflow: "hidden", overflowY: "auto"}}>
+      <div style={{width: "100%", height: 3000}}>
+        <h1>Home</h1>
+      </div>
+    </main>
   );
 }
 

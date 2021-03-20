@@ -1,5 +1,5 @@
 {
-  "name": "filmmakers_shaders",
+  "name": "basic_scroll_shader",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
